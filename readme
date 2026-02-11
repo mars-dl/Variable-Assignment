@@ -1,0 +1,67 @@
+C++ variable assignment
+Ethan Ma 2/3/26
+
+Data types in C++
+
+char
+A character datatype stores a single character
+char c = 'A';
+
+int
+An integer datatype stores an integer number
+int i = 34;
+
+bool
+A boolean datatype stores a true or false, true is 1, false is 0
+bool isTrue = true;
+
+float
+A float stores numbers with decimal points
+float f = 46.6;
+
+string
+A string is a sequence of letters,
+string s = "C++"
+
+function
+A function is a segment of code seperate from the main function that performs a specific task
+int func(){...}
+
+arr
+An array is a collection of other variables
+int arr[5] = {1, 2, 3, 4, 5};
+
+
+AI used:
+Google Gemini
+Prompt: how to output a string and a int in c++
+Response:
+"To output a string and an integer in C++ using std::cout, you can simply insert them into the output stream one after the other using the insertion operator (<<), separated by an additional string literal like a space or a new line character for readability [1].
+Example
+cpp
+#include <iostream>
+#include <string>
+
+int main() {
+    std::string myString = "The number is: ";
+    int myInt = 42;
+
+    // Output the string and the integer separated by a space,
+    // followed by a newline character
+    std::cout << myString << myInt << std::endl;
+
+    // Alternatively, you can use the newline character '\n'
+    // for potentially better performance
+    std::cout << myString << myInt << '\n';
+
+    return 0;
+}
+Key Components
+#include <iostream>: This header file is necessary to use standard input/output functionalities like std::cout and std::endl.
+std::cout: This is the standard output stream object in C++.
+<< (Insertion Operator): This operator is used to send data to the std::cout stream. It automatically handles the conversion of different data types (like std::string and int) to their appropriate string representation for output.
+std::endl or '\n': These are used to insert a newline character, moving the cursor to the next line of the console.
+Output of the Example
+When you run the code above, the output will be:
+The number is: 42
+The number is: 42"
